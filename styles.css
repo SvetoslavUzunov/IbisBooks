@@ -1,0 +1,280 @@
+body {
+  font-family: "courier new";
+  margin: 0px;
+  padding: 0px;
+  background-color:antiquewhite !important;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.brand{
+    font-size: 35px;
+    font-family: 'Courier New';
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  font-family: 'Courier New';
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+
+.portfolio-items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+  position: relative;
+  margin: 10px 10px 120px 0;
+}
+
+.portfolio-img-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 690px;
+  width: 100%;
+}
+
+.img-text-wrapper {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.img-text-wrapper .subtitle{
+  transition: 1s;
+  color: transparent;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.img-text-wrapper:hover .subtitle{
+  color: lightseagreen;
+  font-weight: 600;
+}
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+  width: 100%;
+}
+
+.profile-content-wrapper {
+  padding: 30px;
+}
+
+.profile-content-wrapper h1{
+  color: lightseagreen;
+}
+
+.profile-content-wrapper h2, h3{
+    color:gray;
+}
+h2{
+  color:gray;
+}
+
+.footer {
+  padding: 15px;
+  background-color: #c9c3c3;
+  color: black;
+  position: relative;
+}
+img{
+    border-radius: 25px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; 
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram{
+  background: #8134AF;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.button {
+  background-color: #c9c3c3;
+  border: none;
+  color: white;
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.book-info{
+    position: relative;
+}
+.placeholder{
+    background-color: #c9c3c3;
+    text-align: center;
+    font-size: 22px;
+    color: black;
+    font-family: 'Courier New';
+    height: 40px;
+    padding-top: 18px;
+    border-radius: 15px;
+}
+q{
+    font-family: monospace;
+    font-size: 15px;
+}
+.subtitle{
+    font-family: 'Courier New';
+}
+p{
+  padding-right: 50px;
+}
+.searchBox{
+  border-radius: 25px;
+}
+table, td{
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+.heading{
+  text-align: center;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#buttonSearch{
+  border-radius: 6px;
+  background-color: darkorange;
+  border: none;
+  cursor: pointer;
+  color: rgb(112, 88, 88);
+  height: 40px;
+}
+#search{
+  width: 220px;
+  border-radius: 8px;
+}
+#contact-info{
+  padding-left: 10px;
+  line-height: 30px;
+}
+#contact-form{
+  padding-left: 750px;
+  position: absolute;
+}
+
+input[type=text], textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+  background-color: darkorange;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#contact-form{
+  padding-left: 900px;
+  font-size: 18px;
+}
+
+.contacts{
+  position: absolute;
+}
+
+.my-info{
+  text-align: center;
+}
+
+.socials{
+  position: absolute;
+  top:25px;
+  right: 16px;
+}
